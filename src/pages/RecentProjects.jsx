@@ -6,7 +6,6 @@ import { PinContainer } from "../ui/Pin";
 import { CTA } from "../components";
 
 const RecentProjects = () => {
-
   return (
     <div className="bg-black">
       <div className="py-20 max-container ">
@@ -21,24 +20,28 @@ const RecentProjects = () => {
               key={item.id}
             >
               <PinContainer
-                title="/ui.aceternity.com"
-                href="https://twitter.com/mannupaaji"
+                title="Click_Here"
+                href={item.link}
               >
                 <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                    style={{ backgroundColor: "#13162D" }}
+                    style={{ backgroundColor: "#13162D", backgroundSize: 'cover' }}
                   >
-                    <img src="/bg.png" alt="bgimg" />
+                    <img
+                      src="/bg.png"
+                      alt="bgimg"
+                      className="object-cover object-center w-full h-full"
+                    />
                   </div>
                   <img
                     src={item.img}
                     alt="cover"
-                    className="z-10 absolute bottom-0"
+                    className="z-10 absolute bottom-0 w-full h-full object-contain"
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">
                   {item.title}
                 </h1>
 
@@ -62,16 +65,16 @@ const RecentProjects = () => {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <img src={icon} alt="icon5" className="p-2" />
+                        <img src={icon} alt="icon5" className="w-full h-full object-contain p-2" />
                       </div>
                     ))}
                   </div>
 
                   <div className="flex justify-center items-center">
                     <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                      Check Live Site
+                      Check Source
                     </p>
-                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                    <FaLocationArrow className="ms-3 text-purple"/>
                   </div>
                 </div>
               </PinContainer>

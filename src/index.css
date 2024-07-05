@@ -85,6 +85,10 @@ body:has(.card[data-color="green"]:hover) {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
     color: #FFFFFF;
   }
+  
+  .text-purple{
+    color: #CBACF9
+  }
 }
 
 .glassmorphism {

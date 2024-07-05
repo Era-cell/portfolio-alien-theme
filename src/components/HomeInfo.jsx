@@ -6,7 +6,7 @@ const renderContent = {
     1: (
         <div className='info-box'>
           <p className='font-medium sm:text-xl text-center'>
-            Worked with many companies <br /> and picked up many skills along the way
+            Worked as an intern, open source contributor <br /> and picked up many skills along the way
           </p>
   
           <Link to='/about' className='neo-brutalism-white neo-btn'>
@@ -18,7 +18,7 @@ const renderContent = {
     2: (
         <div className='info-box'>
           <p className='font-medium text-center sm:text-xl'>
-            Led multiple projects to success over the years. <br /> Curious about the impact?
+            Completed multiple projects over my tebure. <br /> Curious about them?
           </p>
   
           <Link to='/projects' className='neo-brutalism-white neo-btn'>
